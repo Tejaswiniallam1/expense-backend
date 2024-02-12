@@ -1,0 +1,10 @@
+name: Developer_Pull_Request
+on:
+  pull_request:
+    branches:
+      - 'XPNS-*'
+jobs:
+  check-bats-version:
+    runs-on: self-hosted
+    steps:
+      - run: env
