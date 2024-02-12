@@ -4,10 +4,22 @@ on:
     tags:
       - "v*"
 jobs:
-  check-bats-version:
+  CI_Steps:
     runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - run: ls
-      - run: tail index.js
+
+      - name: SAST Scans
+        run: echo SAST Scans
+
+      - name: SCA Scans
+        run: echo SCA Scans
+
+      - name: Detect Secrets in Source Code
+        run: echo Detect Secrets in Source Code
+
+      - name: Produce Artifact
+        run: echo Produce Artifact
+
+
