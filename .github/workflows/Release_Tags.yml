@@ -5,21 +5,6 @@ on:
       - "v*"
 jobs:
   CI_Steps:
-    runs-on: self-hosted
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: SAST Scans
-        run: echo SAST Scans
-
-      - name: SCA Scans
-        run: echo SCA Scans
-
-      - name: Detect Secrets in Source Code
-        run: echo Detect Secrets in Source Code
-
-      - name: Produce Artifact
-        run: echo Produce Artifact
+    uses: raghudevopsb77/github-actions/.github/workflows/Release_Tags.yml@main
 
 
