@@ -11,7 +11,7 @@ jobs:
   CI_Steps:
     uses: raghudevopsb77/github-actions/.github/workflows/Developer_Branch_CI.yml@main
     secrets: inherit
-    with:
+    env:
       service_name: expense-backend
 
 
