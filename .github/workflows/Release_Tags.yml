@@ -11,5 +11,6 @@ env:
 jobs:
   CI_Steps:
     uses: raghudevopsb77/github-actions/.github/workflows/Release_Tags.yml@main
-
+    with:
+      service_name: expense-backend
 
